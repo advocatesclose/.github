@@ -14,11 +14,11 @@ Advocates Close (the "Company") is a company that develops technology for use by
 
 The following business components have been developed.
 
-    - [Document Formatting Component]().
-    - [Document Comparison Component]().
-    - [Document Persistence Component]().
-    - [Document Printing Component]().
-    - [Document Templating Component]().
+  [Document Formatting Component]().
+  [Document Comparison Component]().
+  [Document Persistence Component]().
+  [Document Printing Component]().
+  [Document Templating Component]().
     
     
     
