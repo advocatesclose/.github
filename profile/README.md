@@ -38,7 +38,7 @@ The following business components have been developed.
   [Document Encryption Component]()
 
 ### Layout
-  [Document Fragmentation Component]()
+  [Document Fragmentation Component](). Documents must be broken into fragments so that they may be processed on a single device. Fragmentation must consistent.
 
   [Document Layout Component]()
 
