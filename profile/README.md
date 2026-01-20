@@ -43,6 +43,9 @@ The following business components have been developed.
   [Document Manipulation Component]()
 
   [Document Versioning Component]()
+  
+  - Here, we would like to merely "snapshot" a document. That is, we would like to know what precisely was the state of a given document as of some particular instant in time. 
+  - "Versioning" is a snapshot operation. "Versioning" and "version control" are not the same thing.
 
   [Document Encryption Component]()
 
