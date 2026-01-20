@@ -21,34 +21,26 @@ The following business components have been developed.
   [Document Persistence Component]()
   
   [Document Printing Component]()
-  
+
+### Document Content
   [Document Templating Component]()
-    
-    
-    
-## Document Formatting Problems
 
-## Document Comparision Problems
+  [Document Manipulation Component]()
 
-## Document Persistence Problems
+  [Document Versioning Component]()
 
-## Document Printing Problems
+  [Document Encryption Component]()
 
-## Document Templating Problems
+### Document Geometry
+  [Document Fragmentation Component]()
 
-## Document Manipulation Problems
+  [Document Layout Component]()
 
-## Document Versioning Problems
+### Document Rendering
+  [Document Graphics Component]()
 
-## Document Editing Problems
+  [Document Drawing Component]()
 
-## Document Encryption Problems
-
-## Document Geometry Problems
-
-## Document Rendering Problems
-
-## Document Storage Problems
 
 ## Document Learning Problems
 
