@@ -29,7 +29,16 @@ The following business components have been developed.
   [Document Printing Component]()
 
 ### Content
-  [Document Templating Component]()
+
+#### Templating
+
+  [Creating a template]()
+
+  [Reading from a template]()
+
+  [Writing to a template]()
+
+  [Operating upon a template]()
 
   [Document Manipulation Component]()
 
