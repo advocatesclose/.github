@@ -42,7 +42,7 @@ The following business components have been developed.
 
   [Document Manipulation Component]()
 
-  #### Versioning
+#### Snapshotting
 
   ##### What do we want
   - Here, we would like to know what precisely was the state of a given document as of some particular instant in time.
@@ -61,8 +61,6 @@ The following business components have been developed.
 
   ##### What is genuinely uncertain in regards to such information?
   
-  [Document Encryption Component]()
-
 ### Layout
   [Document Fragmentation Component](). Documents must be broken into fragments so that they may be processed on a single device. Fragmentation must consistent.
 
@@ -80,3 +78,5 @@ The following business components have been developed.
 
 ## Artificial Intelligence
 
+## Security
+  [Document Encryption Component]()
