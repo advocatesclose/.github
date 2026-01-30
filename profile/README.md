@@ -18,7 +18,7 @@ The following business components have been developed.
 
 #### I/O Components
 
-  [Document Reading Component]()
+  [Document Reading Component](https://github.com/advocatesclose/AtlasReadingKit)
 
   [Document Formatting Component]()
   
