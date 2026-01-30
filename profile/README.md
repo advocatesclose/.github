@@ -14,6 +14,12 @@ Advocates Close (the "Company") is a company that develops technology for use by
 The following business components have been developed.
 
 ### Document Components
+### Versioning Components
+### Content Components
+### Graphics Components
+### Machine Learning Components
+### Data Security Components
+
 
 #### I/O Components
 
@@ -27,9 +33,7 @@ The following business components have been developed.
   
   [Document Printing Component]()
 
-#### Content Components
-
-##### Templating Components
+#### Templating Components
 
   [Creating a template]()
 
