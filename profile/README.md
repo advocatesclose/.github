@@ -14,15 +14,7 @@ Advocates Close (the "Company") is a company that develops technology for use by
 The following business components have been developed.
 
 ### Document Components
-### Versioning Components
-### Content Components
-### Graphics Components
-### Machine Learning Components
-### Data Security Components
-
-
-#### I/O Components
-
+  
   [Document Reading Component](https://github.com/advocatesclose/AtlasReadingKit)
 
   [Document Formatting Component]()
@@ -33,7 +25,9 @@ The following business components have been developed.
   
   [Document Printing Component]()
 
-#### Templating Components
+### Versioning Components
+
+### Templating Components
 
   [Creating a template]()
 
@@ -46,25 +40,21 @@ The following business components have been developed.
   [Document Manipulation Component]()
 
   [Document Versioning Component]()
-
-### Versioning Components
-
-### Layout
+  
+### Graphics Components
+  
   [Document Fragmentation Component](). Documents must be broken into fragments so that they may be processed on a single device. Fragmentation must consistent.
 
   [Document Layout Component]()
 
-### Graphics
   [Document Graphics Component]()
 
   [Document Drawing Component]()
 
-### Rendering
   [Document Animation Component]()
 
-## Machine Learning
+### Machine Learning Components
 
-## Artificial Intelligence
+### Data Security Components
 
-## Security
   [Document Encryption Component]()
