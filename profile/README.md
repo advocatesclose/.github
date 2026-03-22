@@ -1,22 +1,16 @@
 # Advocates Close
 
-**Native macOS software for securities lawyers.** Built on Apple frameworks — SwiftUI, SwiftData, XPC Services, TextKit 2 — with nothing in between.
-
-Advocates Close is a New York software company that builds tools for the people who draft, review, and file SEC registration statements. Our premise: the hard part of securities work isn't writing the document. It's knowing what changed, where, and whether it matters. Everything we build starts from that observation.
+Native macOS software built on Apple frameworks — SwiftUI, SwiftData, XPC Services, TextKit 2 — with nothing in between.
 
 ## Redliner
 
-Our flagship application. Redliner is a cross-filing comparison engine for SEC registration statements — S-1s, S-4s, 10-Ks, and their amendments.
-
-The conventional approach to redlining treats it as an artifact of document editing: you compare two versions of the same file and highlight what moved. Redliner treats the redline as a **lens** — a way to isolate the material differences across structurally identical filings. When two SPACs file substantially similar S-1s with the same counsel, the ten pages that differ are where the deal lives. Redliner finds those pages.
-
-**Architecture.** Redliner is a multi-process application. The main app handles UI and state. Document conversion and redline generation run in dedicated XPC services — separate processes with independent memory spaces, managed by `launchd`, created and destroyed on demand. No document content crosses the XPC boundary. The app passes file paths; the services read, process, and write directly to the filesystem.
+A multi-process macOS application. The main app handles UI and state. Document conversion and redline generation run in dedicated XPC services — separate processes with independent memory spaces, managed by `launchd`, created and destroyed on demand. No document content crosses the XPC boundary. The app passes file paths; the services read, process, and write directly to the filesystem.
 
 The redline engine implements a word-level Myers diff algorithm and uses `NSFileCoordinator` to coordinate concurrent reads and writes across processes. Multiple redlines execute in parallel — each with its own XPC connection, its own handler instance, its own coordinated file access — orchestrated by Swift structured concurrency.
 
-**Rendering.** Four named CSS stylesheets — switchable at runtime — cover the range from web-grade minimalism to raw EDGAR appearance. A Handlebars-style template engine resolves variables, conditionals, loops, and computed financial expressions against structured filing data persisted in SwiftData. Pandoc handles format conversion over XPC.
+Four named CSS stylesheets — switchable at runtime — cover the range from web-grade minimalism to raw EDGAR appearance. A Handlebars-style template engine resolves variables, conditionals, loops, and computed financial expressions against structured data persisted in SwiftData. Pandoc handles format conversion over XPC.
 
-Redliner requires macOS 15.0+, Xcode 16+, and Swift 6.
+macOS 15.0+. Xcode 16+. Swift 6.
 
 ## Atlas
 
@@ -33,7 +27,7 @@ Every keystroke in an Atlas editor triggers an `NSTextStorageDelegate` callback 
 [5] t=09:14:06.100  replace  {15,0}  "alleges"
 ```
 
-From this log, every intermediate state of the document can be reconstructed. Deliberation time between edits can be measured. Revision patterns — write-then-delete-then-rewrite — can be identified and classified. The attorney's drafting process becomes a structured dataset, captured at the resolution of individual keystrokes.
+From this log, every intermediate state of the document can be reconstructed. Deliberation time between edits can be measured. Revision patterns — write-then-delete-then-rewrite — can be identified and classified.
 
 | Package | Description |
 |---|---|
@@ -58,5 +52,3 @@ Everything listed here is an Apple framework or a first-party Swift package. Thi
 ---
 
 *Named after [Advocates Close](https://en.wikipedia.org/wiki/Advocates_Close), an alley off the Royal Mile in Edinburgh, adjacent to the old courts where Scottish advocates once kept their chambers.*
-
-*New York.*
